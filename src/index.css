@@ -1,3 +1,77 @@
-@tailwind base;  
-@tailwind components;  
-@tailwind utilities;  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+    --main-load: 500ms;
+}
+
+.main_text {
+    animation: main-load;
+    animation-duration: var(--main-load);
+    animation-timing-function: ease-in;
+    animation-delay: var(--main-load);
+    animation-fill-mode: forwards; /*set final look to final key frame */
+    transform: scale(0); /*set initial look before animation*/
+}
+
+@keyframes main-load {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1); /*increasing the scale gives it a bounce effect*/
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+/* add this class to fade in load sections */
+.fadeLoad {
+    animation: fade-load 700ms ease-in;
+    animation-delay: inherit;
+    animation-fill-mode: forwards;  /* set final look to final key frame */
+    transform: scale(0); /*set initial look before animation*/
+}
+
+
+/* intersection observers for mouse scroll on viewport */
+@keyframes fade-load {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* add this class to fade in load sections */
+.curveball {
+    animation: curveball-load 800ms ease-in;
+    animation-timing-function: 700ms;
+    animation-delay: inherit;
+    animation-fill-mode: forwards;  /* set final look to final key frame */
+    transform: scale(0); /*set initial look before animation*/
+}
+
+
+/* intersection observers for mouse scroll on viewport */
+@keyframes curveball-load {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        scale: 0;
+    } 90%{
+        transform: translateX(0) rotate(1080deg);
+        scale: 0.3;
+    }
+    100%{
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+        scale: 1;
+    }
+}
