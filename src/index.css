@@ -75,3 +75,24 @@
         scale: 1;
     }
 }
+
+.hero_text {
+    animation: hero-load;
+    animation-duration: var(--main-load);
+    animation-timing-function: ease-in;
+    animation-delay: var(--main-load);
+    animation-fill-mode: forwards; /*set final look to final key frame */
+    transform: scale(0); /*set initial look before animation*/
+}
+
+@keyframes hero-load {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1); /*increasing the scale gives it a bounce effect*/
+    }
+    100%{
+        transform: scale(1)
+    }
+}
