@@ -4,7 +4,7 @@
 
 * {
     scroll-behavior: smooth;
-    --main-load: 500ms;
+    --main-load: 900ms;
 }
 
 .main_text {
@@ -87,12 +87,16 @@
 
 @keyframes hero-load {
     0% {
-        transform: scale(0);
-    }
-    90% {
-        transform: scale(1.1); /*increasing the scale gives it a bounce effect*/
+        transform: translateX(-100%);
+        opacity: 0;
+        scale: 0;
+    } 90%{
+        transform: translateX(0) rotateY(720deg);
+        scale: 0.3;
     }
     100%{
-        transform: scale(1)
+        transform: translateX(0) rotateY(0);
+        opacity: 1;
+        scale: 1;
     }
 }
