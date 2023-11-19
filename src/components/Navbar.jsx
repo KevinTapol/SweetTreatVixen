@@ -12,7 +12,7 @@ const Navbar = () => {
     <div id='navbar' className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white absolute'>
     
         {/* hamburger menu useState logic for open close to display hamburger or X */}
-        <div onClick={handleNav} className='flex flex-end text-[#00df9a] top-9 right-9 z-[999] fixed cursor-pointer'  >
+        <div onClick={handleNav} className='flex flex-end text-[#00df9a] top-2 right-2 z-[999] fixed cursor-pointer '  >
             {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
         </div>
         {/* menu is off the page by 100% to the left and pulled on by 80% when hamburger cliked */}

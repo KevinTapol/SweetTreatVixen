@@ -1,29 +1,29 @@
 [
     {
-      "id": "honeyBuns",
-      "imgUrl": "/imgs/special.jpg",
-      "name": "🍰 Honey Buns",
+      "id": "donuts",
+      "imgUrl": "/imgs/donuts.jpg",
+      "name": "🍩 Donuts",
       "bread": "Toasted Ciabatta",
       "ingredients": "🥩BBQ Shredded Beef | 🧀Cheddar Cheese | 🍎Apple Jalapeno Slaw | 🧅French's Crispy Fried Onions"
     },
     {
       "id": "cakes",
-      "imgUrl": "/imgs/special.jpg",
+      "imgUrl": "/imgs/cake.jpg",
       "name": "🍰 Cakes",
       "bread": "No Bun",
       "ingredients": "🍗4 Fried Tenders | 🍟or🥗Side | 🍾Two Sauces"
     },
     {
-      "id": "muffins",
-      "imgUrl": "/imgs/special.jpg",
-      "name": "🍰 Muffins",
+      "id": "cupcake",
+      "imgUrl": "/imgs/cupcake.jpg",
+      "name": "🧁 Cupcakes",
       "bread": "🍔Toasted Brioche Bun",
       "ingredients": "🍗3 Fried Tenders in Nashville Spice | 🥬Lettuce | 🥒Pickles"
     },
     {
       "id": "cookies",
-      "imgUrl": "/imgs/special.jpg",
-      "name": "🍰 Cookies",
+      "imgUrl": "/imgs/cookie.jpg",
+      "name": "🍪 Cookies",
       "bread": "🥖Toasted Hoagie",
       "ingredients": "🍗Grilled Chicken Tenders | 🧀 Provolone | 🫑Peppers & 🧅Onions | 🧄Herb Garlic Aioli"
     }    

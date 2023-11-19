@@ -80,7 +80,7 @@
     animation: hero-load;
     animation-duration: var(--main-load);
     animation-timing-function: ease-in;
-    animation-delay: var(--main-load);
+    /* animation-delay: var(--main-load); */
     animation-fill-mode: forwards; /*set final look to final key frame */
     transform: scale(0); /*set initial look before animation*/
 }
