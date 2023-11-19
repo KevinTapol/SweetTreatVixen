@@ -19,10 +19,12 @@ const Navbar = () => {
         <div className={nav ? 'fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300]/60 ease-in-out duration-500 z-[999] md:w-[35%]' : 'fixed left-[-100%] z-[999]'} >
             <h1 className='w-full text-3xl font-bold text-[#00df9a] text-center mt-4'>Catering Menu</h1>
             {/* create a template for array of items in the json as anchor tags adding href by item id */}
-            <div className='m-4 flex flex-col'>
+            <div className='flex flex-col'>
+                <div className='block m-auto'>
                 {dataArray.map((item, index) => (
-                    <a onClick={handleNav} className='text-[#00df9a] m-1' key={index} href={`#${item.id}`}>{item.name}</a>
+                    <a onClick={handleNav} className='text-[#00df9a] flex justify-start' key={index} href={`#${item.id}`}>{item.name}</a>
                 ))}
+                </div>
             </div>
         </div>
     </div>
