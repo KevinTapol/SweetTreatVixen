@@ -8,7 +8,7 @@ const Menu = () => {
     // overflow hidden removes the additional scroll bar for internal menus
     <div className='overflow-hidden px-7 bg-black'>
       {/* iterating through the data.json and creating components using the MenuItem component */}
-      <div className='relative min-w-full grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3'>
+      <div  className='relative min-w-full grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3'>
             {dataArray.map((item, index) => (
             <MenuItem
               id={`${item.id}`}

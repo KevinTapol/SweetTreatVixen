@@ -31,3 +31,5 @@ git commit --date='YYYY-MM-DD' -m "commit comments" -->
 <a target="_blank" href="https://www.npmjs.com/package/react-type-animation">Click here for the **React Animations Docs**</a>
 
 <a target="_blank" href="https://www.youtube.com/watch?v=22CxRxryQFE&t=1733s&ab_channel=CodeCommerce" >Click here for Code Commerce's **Portfolio Guide** using React and Tailwind</a> -->
+
+# Trying to figure out why e.stopPropagation() is not allowing the out of bounds click of modal component to close the modal component

@@ -11,7 +11,7 @@ const Main = () => {
         <div className='w-full h-screen absolute top-0 left-0 bg-black/10 flex justify-center items-center'>
             <div ref={myRef} className={`${myElementIsVisible ? 'absolute hero_text' : 'absolute  opacity-0' }`}>
                 <h1 className='text-[4vw] font-bold text-black/50 text-center font-sans'>Sweet Treat Vixen</h1>
-                <img src={chef} className='block m-auto w-[40%] opacity-90' alt="" />
+                <img src={chef} className='block m-auto w-[40%] opacity-90 rounded-[15%]' alt="" />
             </div>
         </div>
     </div>
