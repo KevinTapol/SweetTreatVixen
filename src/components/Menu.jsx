@@ -18,6 +18,7 @@ const Menu = () => {
               bread={item.bread}
               ingredients={item.ingredients}
               directions={item.directions}
+              instructions={item.instructions}
               
             />
           ))}

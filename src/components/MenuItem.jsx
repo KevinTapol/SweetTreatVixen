@@ -8,7 +8,7 @@ const MenuItem = ({id, imgUrl ,name ,bread , ingredients, directions, instructio
     // creating a template component for an item in the data.json 
     <div id={id} className='relative max-w-[450px] h-[450px] w-full mx-auto my-3 py-16 px-4 ' >
         <img className='object-cover w-full h-full rounded-2xl bg-center bg-cover duration-500' src={imgUrl} alt="" />
-        <Modal open={openModal} name={name} imgUrl={imgUrl} bread={bread} ingredients={ingredients} directions={directions}  id={id} onClose={() => setOpenModal(false)}/>
+        <Modal open={openModal} name={name} imgUrl={imgUrl} bread={bread} ingredients={ingredients} directions={directions} instructions={instructions} id={id} onClose={() => setOpenModal(false)}/>
         <div className='bg-white/90 rounded-lg my-1' >
             <h2 className='text-xl text-center pr-2 font-bold border-b border-gray-600 cursor-pointer' >
                 {name}
