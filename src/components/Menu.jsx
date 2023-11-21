@@ -17,6 +17,8 @@ const Menu = () => {
               name={item.name}
               bread={item.bread}
               ingredients={item.ingredients}
+              directions={item.directions}
+              
             />
           ))}
         </div>
