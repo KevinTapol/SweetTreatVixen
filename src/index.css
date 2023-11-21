@@ -7,6 +7,10 @@
     --main-load: 900ms;
 }
 
+.banner {
+    font-family: 'Pacifico', cursive;
+}
+
 .main_text {
     animation: main-load;
     animation-duration: var(--main-load);
