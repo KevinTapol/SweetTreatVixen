@@ -33,4 +33,7 @@ git commit --date='YYYY-MM-DD' -m "commit comments" -->
 <a target="_blank" href="https://www.youtube.com/watch?v=22CxRxryQFE&t=1733s&ab_channel=CodeCommerce" >Click here for Code Commerce's **Portfolio Guide** using React and Tailwind</a> -->
 
 <!-- modal needed position fixed with z index to be a popup -->
-# Next step create a form field of post and get to email 
+<!-- # Next step create a form field of post and get to email 1:04:00 
+[click here](https://www.youtube.com/watch?v=22CxRxryQFE&t=1733s&ab_channel=CodeCommerce) -->
+# Next step create app.getform.io account and use .env VITE_VARIABLE with form action of action={`${import.meta.env.VITE_FORM}`}
+*.env must be a root level!*
