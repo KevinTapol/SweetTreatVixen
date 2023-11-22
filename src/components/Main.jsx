@@ -6,7 +6,7 @@ import chef from '/imgs/chef.jpg'
 const Main = () => {
     const { ref:myRef, inView: myElementIsVisible } = useInView();
   return (
-    <div>
+    <div id='home'>
         <img className='w-full h-screen object-cover' src={shop} alt="" />
         <div className='w-full h-screen absolute top-0 left-0 bg-black/10 flex justify-center items-center'>
             <div ref={myRef} className={`${myElementIsVisible ? 'absolute hero_text' : 'absolute  opacity-0' }`}>
