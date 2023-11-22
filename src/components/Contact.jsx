@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='max-w-[1040px] m-auto mx-7 md:pl-20 p-4 py-16'>
+    <div id='contact' className='block max-w-[85%] mx-auto md:pl-20 p-4 py-16'>
         <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
         <form action={`${import.meta.env.VITE_FORM}`} method='POST' encType='multipart/form-data'>
             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>

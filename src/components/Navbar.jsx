@@ -25,6 +25,7 @@ const Navbar = () => {
                     <a onClick={handleNav} className='text-[#00df9a] flex justify-start' key={index} href={`#${item.id}`}>{item.name}</a>
                 ))}
                 </div>
+                <a onClick={handleNav} href="#contact" className='text-[#00df9a] mx-auto m-4'>Contact</a>
             </div>
         </div>
     </div>
