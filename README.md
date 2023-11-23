@@ -35,5 +35,7 @@ git commit --date='YYYY-MM-DD' -m "commit comments" -->
 <!-- modal needed position fixed with z index to be a popup -->
 <!-- # Next step create a form field of post and get to email 1:04:00 
 [click here](https://www.youtube.com/watch?v=22CxRxryQFE&t=1733s&ab_channel=CodeCommerce) -->
-# Next step create app.getform.io account and use .env VITE_VARIABLE with form action of action={`${import.meta.env.VITE_FORM}`}
-*.env must be a root level!*
+<!-- # Next step create app.getform.io account and use .env VITE_VARIABLE with form action of action={`${import.meta.env.VITE_FORM}`}
+*.env must be a root level!* -->
+
+***Learn Airtable for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier***
