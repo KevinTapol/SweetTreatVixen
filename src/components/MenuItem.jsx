@@ -10,11 +10,11 @@ const MenuItem = ({id, imgUrl ,name ,bread , ingredients, directions, instructio
         <img className='object-cover w-full h-full rounded-2xl bg-center bg-cover duration-500' src={imgUrl} alt="" />
         <Modal open={openModal} name={name} imgUrl={imgUrl} bread={bread} ingredients={ingredients} directions={directions} instructions={instructions} id={id} onClose={() => setOpenModal(false)}/>
         <div className='bg-white/90 rounded-lg my-1' >
-            <h2 className='text-xl text-center pr-2 font-bold border-b border-gray-600 cursor-pointer' >
+            <h2 className='text-xl text-center pr-2 font-bold border-b border-gray-600' >
                 {name}
             </h2>
             <div>
-              <button className='block mx-auto' onClick={() => {setOpenModal(!openModal)}}>Click Here!</button>
+              <button className='block mx-auto border-2 bg-[#00df9a] text-white rounded-xl p-1 hover:scale-[110%] ease-in duration-200 cursor-pointer' onClick={() => {setOpenModal(!openModal)}}>Click Here!</button>
             </div>
             {/* <h2 className='text-sm border-b border-gray-600' >{bread}</h2>
             <h2>{ingredients}</h2> */}

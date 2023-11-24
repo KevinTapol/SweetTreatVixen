@@ -29,9 +29,9 @@ const Footer = () => {
         </a> */}
         {/* <Links /> */}
         {/* using flex to display the favicon and copyright as a row */}
-        <div className='flex'>
-          <a target='_blank' href="https://kevintapolcsanyi.netlify.app/" className='text-[#00df9a] scale-[80%] hover:scale-[100%] ease-in duration-200 cursor-pointer'><img className='scale-[60%]' src={favicon} alt="" /></a>
-          <h3 className='m-auto pt-2 text-md text-[#00df9a]' >  &copy; 2023 Kevin Tapolcsanyi</h3>
+        <div className=''>
+          <a target='_blank' href="https://kevintapolcsanyi.netlify.app/" className='flex text-[#00df9a] scale-[80%] hover:scale-[100%] ease-in duration-200 cursor-pointer'><img className='scale-[60%]' src={favicon} alt="" /><h3 className='m-auto text-md text-[#00df9a]' >  &copy; 2023 Kevin Tapolcsanyi</h3></a>
+          
         </div>
     </div>
   )
