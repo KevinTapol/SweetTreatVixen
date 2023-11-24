@@ -1,4 +1,4 @@
-/*import shop from '/imgs/shop.jpg'
+import shop from '/imgs/shop.jpg'
 import chef from '/imgs/chef.jpg'
 
 const Main = () => {
@@ -17,11 +17,11 @@ const Main = () => {
     </div>
   )
 }
-export default Main*/
+export default Main
 
 
 // useState useEffect useRef instead of useInView
-
+/*
 import React, { useState, useRef, useEffect } from 'react'
 import shop from '/imgs/shop.jpg'
 import chef from '/imgs/chef.jpg'
@@ -55,6 +55,7 @@ const Main = () => {
   )
 }
 export default Main
+*/
 
 
 // useInView hook
