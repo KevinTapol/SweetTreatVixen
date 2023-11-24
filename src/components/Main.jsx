@@ -1,4 +1,4 @@
-import shop from '/imgs/shop.jpg'
+/*import shop from '/imgs/shop.jpg'
 import chef from '/imgs/chef.jpg'
 
 const Main = () => {
@@ -17,11 +17,11 @@ const Main = () => {
     </div>
   )
 }
-export default Main
+export default Main*/
 
 
 // useState useEffect useRef instead of useInView
-/*
+
 import React, { useState, useRef, useEffect } from 'react'
 import shop from '/imgs/shop.jpg'
 import chef from '/imgs/chef.jpg'
@@ -35,7 +35,9 @@ const Main = () => {
     const entry = entries[0];
       setMyElementIsVisible(entry.isIntersecting)      
     },{
-      threshold: 0
+      root:null,
+      rootMargin:'0px',
+      threshold:0.9
     })
     observer.observe(myRef.current)
   }, [])
@@ -45,7 +47,7 @@ const Main = () => {
         <img className='w-full h-screen object-cover' src={shop} alt="" />
         <div className='w-full h-screen absolute top-0 left-0 bg-black/10 flex justify-center items-center'>
             <div ref={myRef} className={`${myElementIsVisible ? 'absolute hero_text' : 'absolute  opacity-0' }`}>
-                <h1 className='text-[4vw] font-bold text-purple-400 text-center banner'>Sweet Treat Vixen</h1>
+                <h1 className='text-[4vw] font-bold text-pink-400 text-center banner'>Sweet Treat Vixen</h1>
                 <img src={chef} className='block m-auto w-[40%] opacity-90 rounded-[15%]' alt="" />
             </div>
         </div>
@@ -53,7 +55,7 @@ const Main = () => {
   )
 }
 export default Main
-*/
+
 
 // useInView hook
 /*
