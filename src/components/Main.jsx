@@ -1,3 +1,27 @@
+import shop from '/imgs/shop.jpg'
+import chef from '/imgs/chef.jpg'
+
+const Main = () => {
+
+
+
+  return (
+    <div id='home'>
+        <img className='w-full h-screen object-cover' src={shop} alt="" />
+        <div className='w-full h-screen absolute top-0 left-0 bg-black/10 flex justify-center items-center'>
+            <div className='absolute'>
+                <h1 className='text-[4vw] font-bold text-purple-800 text-center banner'>Sweet Treat Vixen</h1>
+                <img src={chef} className='block m-auto w-[40%] opacity-90 rounded-[15%]' alt="" />
+            </div>
+        </div>
+    </div>
+  )
+}
+export default Main
+
+
+// useState useEffect useRef instead of useInView
+/*
 import React, { useState, useRef, useEffect } from 'react'
 import shop from '/imgs/shop.jpg'
 import chef from '/imgs/chef.jpg'
@@ -29,7 +53,9 @@ const Main = () => {
   )
 }
 export default Main
+*/
 
+// useInView hook
 /*
 import React from 'react'
 import shop from '/imgs/shop.jpg'
