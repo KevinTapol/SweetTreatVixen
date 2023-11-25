@@ -109,7 +109,7 @@
 .main_img {
     animation: main-img;
     animation-duration: var(--main-load);
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     animation-delay: 0ms;
     animation-fill-mode: forwards; /*set final look to final key frame */
     transform: scale(0); /*set initial look before animation*/
