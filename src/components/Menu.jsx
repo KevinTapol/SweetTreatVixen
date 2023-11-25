@@ -24,7 +24,7 @@ const Menu = () => {
           ))}
         </div>
         {/* adding a fixed up arrow at the bottom right side of the screen */}
-        <a className='text-[#00df9a] flex justify-end ms-9' href="#navbar">
+        <a className='text-pink-500 flex justify-end ms-9' href="#navbar">
           <VscArrowUp className='fixed bottom-2 right-2 z-[999] hover:scale-[120%] ease-in duration-200' size={30} />
         </a>
     </div>
