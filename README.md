@@ -1,4 +1,6 @@
 # Sweet Treat Vixen
+<!-- ![Relative](/public/imgs/SweetTreatVixen.gif) -->
+<img src="./public/imgs/SweetTreatVixen.gif" width="100%" alt="#"/>
 - npm create vite@latest .
 
 ***To Install Tailwind***
