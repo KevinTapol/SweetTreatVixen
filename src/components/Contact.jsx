@@ -27,7 +27,7 @@ const Contact = () => {
                 {/* <label className='uppercase py-2 text-sm'>Message</label> */}
                 <textarea className='border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white' name="message" id="" cols="30" rows="10" placeholder='Message' required></textarea>
             </div>
-            <button className='block mx-auto font_pacifico bg-pink-500 text-gray-100 mt-4 w-[50%] p-4 rounded-lg md:w-[25%] hover:scale-[110%] ease-in duration-200' type='submit'>Send Message</button>
+            <button className='block mx-auto font_pacifico bg-pink-500 text-black mt-4 w-[50%] p-4 rounded-lg md:w-[25%] hover:scale-[110%] ease-in duration-200' type='submit'>Send Message</button>
         </form>
     </div>
   )
