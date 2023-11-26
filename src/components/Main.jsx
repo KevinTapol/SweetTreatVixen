@@ -74,9 +74,9 @@ const Main = () => {
     <div id='home'>
         <img className='w-full h-screen object-cover opacity-70' src={shop} alt="" />
         <div className='w-full h-screen absolute top-0 left-0 bg-black/10 flex justify-center items-center'>
-            <div ref={myRef} className={`${myElementIsVisible ? 'absolute main_img' : 'absolute  opacity-0 ' }`}>
-                <h1 className='text-[4vw] font-bold text-pink-500 text-center font_pacifico'>Sweet Treat Vixen</h1>
-                <img src={chef} className='block m-auto w-[40%] opacity-90 rounded-[100%]' alt="" />
+            <div ref={myRef} className={`${myElementIsVisible ? 'absolute main_img w-3/4' : 'absolute  opacity-0 ' }`}>
+                <h1 className='text-[6vw] font-bold text-pink-500 text-center font_pacifico'>Sweet Treat Vixen</h1>
+                <img src={chef} className='block m-auto opacity-90 rounded-[100%]' alt="" />
             </div>
         </div>
     </div>
