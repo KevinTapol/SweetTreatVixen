@@ -41,3 +41,4 @@ git commit --date='YYYY-MM-DD' -m "commit comments" -->
 *.env must be a root level!* -->
 
 ***Learn Airtable for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier***
+*should I change navbar for big screens to include the menu or change the icon to something more descriptive?*
