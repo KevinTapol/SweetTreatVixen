@@ -43,3 +43,5 @@ git commit --date='YYYY-MM-DD' -m "commit comments" -->
 ***Learn Airtable for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier***
 *should I change navbar for big screens to include the menu or change the icon to something more descriptive?*
 TODO add a tag with mailto href with subject and body inputs e.target.value javascript functions 
+
+### add sizes and prices to modal per each category
