@@ -3,7 +3,7 @@
       "id": "donuts",
       "imgUrl": "/imgs/donuts.jpg",
       "name": "🍩 Donuts",
-      "bread": "🍩",
+      "emoji": "🍩",
       "ingredients": "🥩BBQ Shredded Beef | 🧀Cheddar Cheese | 🍎Apple Jalapeno Slaw | 🧅French's Crispy Fried Onions",
       "directions": "Donut directions",
       "instructions": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae veniam numquam maxime eligendi, minima, similique atque nulla vel molestias obcaecati necessitatibus. Fugiat aut impedit modi!"
@@ -12,7 +12,7 @@
       "id": "cakes",
       "imgUrl": "/imgs/cake.jpg",
       "name": "🍰 Cakes",
-      "bread": "🍰",
+      "emoji": "🍰",
       "ingredients": "🍗4 Fried Tenders | 🍟or🥗Side | 🍾Two Sauces",
       "directions": "Cake Directions",
       "instructions": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae veniam numquam maxime eligendi, minima, similique atque nulla vel molestias obcaecati necessitatibus. Fugiat aut impedit modi!"
@@ -21,7 +21,7 @@
       "id": "cupcake",
       "imgUrl": "/imgs/cupcake.jpg",
       "name": "🧁 Cupcakes",
-      "bread": "🧁",
+      "emoji": "🧁",
       "ingredients": "🍗3 Fried Tenders in Nashville Spice | 🥬Lettuce | 🥒Pickles",
       "directions": "Cupcake Directions",
       "instructions": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae veniam numquam maxime eligendi, minima, similique atque nulla vel molestias obcaecati necessitatibus. Fugiat aut impedit modi!"
@@ -30,7 +30,7 @@
       "id": "cookies",
       "imgUrl": "/imgs/cookie.jpg",
       "name": "🍪 Cookies",
-      "bread": "🍪",
+      "emoji": "🍪",
       "ingredients": "🍗Grilled Chicken Tenders | 🧀 Provolone | 🫑Peppers & 🧅Onions | 🧄Herb Garlic Aioli",
       "directions": "Cookies Directions",
       "instructions": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae veniam numquam maxime eligendi, minima, similique atque nulla vel molestias obcaecati necessitatibus. Fugiat aut impedit modi!"

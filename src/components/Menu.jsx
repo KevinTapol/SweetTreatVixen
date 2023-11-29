@@ -15,7 +15,7 @@ const Menu = () => {
               key={index}
               imgUrl={item.imgUrl}
               name={item.name}
-              bread={item.bread}
+              emoji={item.emoji}
               ingredients={item.ingredients}
               directions={item.directions}
               instructions={item.instructions}

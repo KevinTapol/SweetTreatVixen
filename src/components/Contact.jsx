@@ -12,7 +12,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col'>
                     {/* <label className='uppercase py-2 text-sm'>Phone Number</label> */}
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white' type="text" name='phone' placeholder='Phone Number' required />
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white' type="tel" name='phone' placeholder='Phone Number' required />
                 </div>
             </div>
             <div className='flex flex-col py-2'>
