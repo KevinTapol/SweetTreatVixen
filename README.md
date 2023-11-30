@@ -45,3 +45,4 @@ git commit --date='YYYY-MM-DD' -m "commit comments" -->
 TODO add a tag with mailto href with subject and body inputs e.target.value javascript functions 
 
 ### add sizes and prices to modal per each category
+*thinking about how to add size or quantity to json array and conditionally display based on size*
