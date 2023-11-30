@@ -19,6 +19,9 @@ const Menu = () => {
               ingredients={item.ingredients}
               directions={item.directions}
               instructions={item.instructions}
+              small={item.small}
+              medium={item.medium}
+              large={item.large}
               
             />
           ))}

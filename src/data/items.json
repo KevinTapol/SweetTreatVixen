@@ -6,6 +6,9 @@
       "emoji": "🍩",
       "ingredients": "🥩BBQ Shredded Beef | 🧀Cheddar Cheese | 🍎Apple Jalapeno Slaw | 🧅French's Crispy Fried Onions",
       "directions": "Donut directions",
+      "small": "8 Donuts $12" ,
+      "medium": "10 Donuts $14.50",
+      "large": "12 Donuts $16",
       "instructions": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae veniam numquam maxime eligendi, minima, similique atque nulla vel molestias obcaecati necessitatibus. Fugiat aut impedit modi!"
     },
     {
@@ -15,6 +18,9 @@
       "emoji": "🍰",
       "ingredients": "🍗4 Fried Tenders | 🍟or🥗Side | 🍾Two Sauces",
       "directions": "Cake Directions",
+      "small": "Small (feeds 6-8 people) $20",
+      "medium": "Medium (feeds 8-10) $25",
+      "large": "Large (feeds 10-12) $30",
       "instructions": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae veniam numquam maxime eligendi, minima, similique atque nulla vel molestias obcaecati necessitatibus. Fugiat aut impedit modi!"
     },
     {
