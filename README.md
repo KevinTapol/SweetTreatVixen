@@ -46,3 +46,4 @@ TODO add a tag with mailto href with subject and body inputs e.target.value java
 
 ### add sizes and prices to modal per each category
 *thinking about how to add size or quantity to json array and conditionally display based on size*
+*added size for key value pairs in json but with small medium large and not quantity*

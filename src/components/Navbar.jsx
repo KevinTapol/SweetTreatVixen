@@ -13,7 +13,7 @@ const Navbar = () => {
     
         {/* hamburger menu useState logic for open close to display hamburger or X */}
         <div onClick={handleNav} className='flex flex-end text-pink-500 top-2 right-2 z-[999] fixed hover:scale-[120%] ease-in duration-200 cursor-pointer '  >
-            {nav ? <AiOutlineClose className='text-red-500' size={30} /> : <AiOutlineMenu size={30} />}
+            {nav ? <AiOutlineClose className='text-red-500' size={30} /> : <AiOutlineMenu size={30} className=''/>}
         </div>
         {/* menu is off the page by 100% to the left and pulled on by 80% when hamburger cliked */}
         <div className={nav ? 'fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300]/80 ease-in-out duration-500 z-[999] md:w-[35%]' : 'fixed left-[-100%] z-[999]'} >
