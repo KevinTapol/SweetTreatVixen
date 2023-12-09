@@ -35,17 +35,23 @@ git commit --date='YYYY-MM-DD' -m "commit comments" -->
 <a target="_blank" href="https://www.youtube.com/watch?v=22CxRxryQFE&t=1733s&ab_channel=CodeCommerce" >Click here for Code Commerce's **Portfolio Guide** using React and Tailwind</a> -->
 
 <!-- modal needed position fixed with z index to be a popup -->
-<!-- # Next step create a form field of post and get to email 1:04:00 
-[click here](https://www.youtube.com/watch?v=22CxRxryQFE&t=1733s&ab_channel=CodeCommerce) -->
-<!-- # Next step create app.getform.io account and use .env VITE_VARIABLE with form action of action={`${import.meta.env.VITE_FORM}`}
-*.env must be a root level!* -->
+- [x] create a form field of post and get to email 1:04:00 
+<!--[click here](https://www.youtube.com/watch?v=22CxRxryQFE&t=1733s&ab_channel=CodeCommerce) -->
+-[x] create app.getform.io account and use .env VITE_VARIABLE with form action *.env must be a root level!* 
+used 
+
+`<form action={`${import.meta.env.VITE_FORM}`}>`
 
 ***Learn Airtable for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier***
 *should I change navbar for big screens to include the menu or change the icon to something more descriptive?*
-TODO add a tag with mailto href with subject and body inputs e.target.value javascript functions 
+add a tag with mailto href with subject and body inputs e.target.value javascript functions 
+- [x] instead I used getform.io
 
-### add sizes and prices to modal per each category
-*thinking about how to add size or quantity to json array and conditionally display based on size*
-*added size for key value pairs in json but with small medium large and not quantity*
+- [x] add sizes and prices to modal per each category
 
-### onClick={(e) => e.stopPropagation()} not working on menus but is working on modals
+- [ ] onClick={(e) => e.stopPropagation()} not working on menus but is working on modals
+- [x] fix onClick events so that both menus cannot be open at the same time  
+
+*I used an arrow function with ; to call 2 functions in line*
+
+`onClick={() => {setNav(false);setCart(true)}}` 
