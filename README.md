@@ -47,7 +47,7 @@ used
 
 `<form action={`${import.meta.env.VITE_FORM}`}>`
 
-***Learn Airtable for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier***
+<mark>Learn Airtable and Airtable JS Library automation emails based on table data per email recipient for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier</mark>
 
 
 *Should I change navbar for big screens to include the menu or change the icon to something more descriptive?*
