@@ -64,3 +64,4 @@ Add a tag with mailto href with subject and body inputs e.target.value javascrip
 I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line specifically on the onClick for menus
 
 `onClick={() => {setNav(false);setCart(true)}}` 
+<!-- gap consultant air table guide -->
