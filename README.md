@@ -64,4 +64,4 @@ Add a tag with mailto href with subject and body inputs e.target.value javascrip
 I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line specifically on the onClick for menus
 
 `onClick={() => {setNav(false);setCart(true)}}` 
-<!-- airtable has a js library to install with npm i airtable. Then you can grab your api by specific database form. -->
+<!-- airtable has a js library to install with npm i airtable. Then you can grab your api by specific database form. Log into your airtable account on airtable.com/api for documentation, api key and base id (database id).-->
