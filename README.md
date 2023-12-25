@@ -65,3 +65,6 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 
 `onClick={() => {setNav(false);setCart(true)}}` 
 <!-- airtable has a js library to install with npm i airtable. Then you can grab your api by specific database form. Log into your airtable account on airtable.com/api for documentation, api key and base id (database id).-->
+
+*I added the following to the header of index.html to use Pacifico font. I also created a CSS class in index.css called font_pacifico*  
+`<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">`
