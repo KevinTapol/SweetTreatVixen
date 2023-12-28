@@ -66,7 +66,7 @@ export default Main
 import React from 'react'
 import shop from '/imgs/shop.jpg'
 import { useInView } from 'react-intersection-observer'
-import chef from '/imgs/pastry_chef.jpg'
+import chef from '/imgs/Marlet.jpg'
 
 const Main = () => {
     const { ref:myRef, inView: myElementIsVisible } = useInView();
