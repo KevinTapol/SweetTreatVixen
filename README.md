@@ -68,3 +68,5 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 
 *I added the following to the header of index.html to use Pacifico font. I also created a CSS class in index.css called font_pacifico*  
 `<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">`
+
+*Consider adding a carousel to the cake model using another json file like cake.json or display a grid of images per model*
