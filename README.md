@@ -70,3 +70,7 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 `<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">`
 
 *Consider adding a carousel to the cake model using another json file like cake.json or display a grid of images per model*
+
+-[x] Airtable custom JSON object created with bearer token and api 1/7/2024
+-[x] Add environmental variables to netlify hosting site
+-[] Create new screen to gif of user interaction and Airtable data creation
