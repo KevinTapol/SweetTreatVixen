@@ -74,3 +74,5 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 -[x] Airtable custom JSON object created with bearer token and api 1/7/2024
 -[x] Add environmental variables to netlify hosting site
 -[] Create new screen to gif of user interaction and Airtable data creation
+-[x] Create QRCode for website url
+<img src="./public/imgs/qrcode.jpg" width="100%" alt="#"/>
