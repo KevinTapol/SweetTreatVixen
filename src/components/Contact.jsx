@@ -1,14 +1,20 @@
 import React, { useState } from 'react'
 
+// const base = new Airtable({ apiKey: `${import.meta.env.VITE_API}`}).base(`${import.meta.env.VITE_BASE}`);
+
 const Contact = () => {
+
     const [Name, setName] = useState('')
     const [Phone, setPhone] = useState('')
     const [Email, setEmail] = useState('')
     const [Subject, setSubject] = useState('')
     const [Message, setMessage] = useState('')
+    const [formSuccess, setformSuccess] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        setIsLoading(true)
         const airData = {
             "records": [
               {
@@ -30,15 +36,18 @@ const Contact = () => {
                 },
                 body: JSON.stringify(airData)
             }).then(() => {
-                alert('Success! Order sent to Sweet Treat Vixen!')
+                setIsLoading(false)
+                setformSuccess(!formSuccess)
+                // alert('Success! Order sent to Sweet Treat Vixen!')
             }).catch(error => console.log(error))
     }
+
+
 
   return (
     <div id='contact' className='block max-w-[85%] bg-black mx-auto md:pl-20 p-4 py-16'>
         <h1 className='py-4 text-4xl block mx-auto text-center font_pacifico w-[50%] text-pink-500 md:w-[30%]'>Contact</h1>
-       {/* below is the working set for getforms.io */}
-        {/* <form action={`${import.meta.env.VITE_FORM}`} method='POST' encType='multipart/form-data'> */}
+        {/* <form onSubmit={onSubmit} action={`${import.meta.env.VITE_FORM}`} method='POST' encType='multipart/form-data'> */}
         <form onSubmit={handleSubmit} method='POST' encType='multipart/form-data'>
             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
@@ -60,10 +69,14 @@ const Contact = () => {
             </div>
             <div className='flex flex-col py-2'>
                 {/* <label className='uppercase py-2 text-sm'>Message</label> */}
-                <textarea onChange={(e) => setMessage(e.target.value)} value={Message} className='border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white' name="Message" id="" cols="30" rows="10" placeholder='Message' required></textarea>
+                <textarea onChange={(e) => setMessage(e.target.value)} value={Message} className='border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white' name="Message" cols="30" rows="10" placeholder='Message' required></textarea>
             </div>
-            <button className='block mx-auto font_pacifico bg-pink-500 text-black mt-4 w-[50%] p-4 rounded-lg md:w-[25%] hover:scale-[110%] ease-in duration-200' type='submit'>Send Message</button>
+            {!isLoading &&<button className='block mx-auto font_pacifico bg-pink-500 text-black mt-4 w-[50%] p-4 rounded-lg md:w-[25%] hover:scale-[110%] ease-in duration-200' type='submit'>Send Message</button>}
+            {isLoading && <button className='block mx-auto font_pacifico bg-gray-500 text-black mt-4 w-[50%] p-4 rounded-lg md:w-[25%]' type='submit' disabled>Submitting Message...</button>}
         </form>
+        <div className='flex justify-center m-4'>
+           {formSuccess && <h1 className=' text-white border-2 p-4 rounded-xl'>Message Sent!</h1>}           
+        </div>
     </div>
   )
 }
