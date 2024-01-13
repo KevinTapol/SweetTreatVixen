@@ -77,3 +77,4 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 -[x] Create QRCode for website url
 <img src="./public/imgs/qrcode.jpg" width="100%" alt="#"/>
 -[x] create a separate airtable for Marlet since free tier includes emails only from collaborators
+*Also created brand new env for Marlet's free airtable account. Awaiting response for success.*
