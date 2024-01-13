@@ -75,7 +75,7 @@ const Contact = () => {
             {isLoading && <button className='block mx-auto font_pacifico bg-gray-500 text-black mt-4 w-[50%] p-4 rounded-lg md:w-[25%]' type='submit' disabled>Submitting Message...</button>}
         </form>
         <div className='flex justify-center m-4'>
-           {formSuccess && <h1 className=' text-green-500 border-2 border-green-500 p-4 rounded-xl'>Message Sent! to {Email}</h1>}           
+           {formSuccess && <h1 className=' text-green-500 border-2 border-green-500 p-4 rounded-xl'>Message Sent!</h1>}           
         </div>
     </div>
   )
