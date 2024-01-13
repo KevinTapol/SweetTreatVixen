@@ -78,3 +78,6 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 <img src="./public/imgs/qrcode.jpg" width="100%" alt="#"/>
 -[x] create a separate airtable for Marlet since free tier includes emails only from collaborators
 *Also created brand new env for Marlet's free airtable account. Awaiting response for success.*
+
+-[x]change useState logic for forms to 1 object instead of 5 useState strings
+*I had to update the AirData object to reflect changes and the onChange per each input by name value*
