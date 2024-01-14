@@ -168,8 +168,8 @@ const Contact = () => {
       </form>
       <div className="flex justify-center m-4">
         {formSuccess && (
-          <h1 className=" text-green-500 border-2 border-green-500 p-4 rounded-xl">
-            Message Sent!
+          <h1 className="text-pink-500 border-2 border-pink-500 p-4 rounded-xl">
+           Thank you {formData.Name} for your order!
           </h1>
         )}
       </div>
