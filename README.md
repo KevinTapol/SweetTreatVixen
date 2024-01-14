@@ -81,3 +81,7 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 
 -[x]change useState logic for forms to 1 object instead of 5 useState strings
 *I had to update the AirData object to reflect changes and the onChange per each input by name value*
+
+-npm i --save-dev --save-exact prettier
+-npx prettier --write index.html
+replace index.html with whatever file you wish to format by default
