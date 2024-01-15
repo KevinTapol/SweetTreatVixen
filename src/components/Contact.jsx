@@ -69,13 +69,33 @@ const Contact = () => {
       <form onSubmit={handleSubmit} method="POST" encType="multipart/form-data">
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
-            {/* <label className='uppercase py-2 text-sm'>Name</label> */}
+            {/* <div className="flex items-center">
+              <label
+                for="nameInput"
+                className="uppercase py-2 m-2 text-sm text-white"
+              >
+                Name
+              </label>
+              <input
+                onChange={(e) =>
+                  setFormData({ ...formData, Name: e.target.value })
+                }
+                value={formData.Name}
+                className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
+                id="nameInput"
+                type="text"
+                name="Name"
+                placeholder="Name"
+                required
+              />
+            </div> */}
             <input
               onChange={(e) =>
                 setFormData({ ...formData, Name: e.target.value })
               }
               value={formData.Name}
               className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
+              id="nameInput"
               type="text"
               name="Name"
               placeholder="Name"
@@ -109,7 +129,7 @@ const Contact = () => {
             }
             value={formData.Email}
             className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
-            type="tel"
+            type="email"
             name="Phone"
             placeholder="Email"
             required
@@ -169,7 +189,7 @@ const Contact = () => {
       <div className="flex justify-center m-4">
         {formSuccess && (
           <h1 className="text-pink-500 border-2 border-pink-500 p-4 rounded-xl">
-           Thank you {formData.Name} for your order!
+            Thank you {formData.Name} for your order!
           </h1>
         )}
       </div>
