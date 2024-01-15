@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Main from './components/Main'
 import Menu from './components/Menu'
 import Contact from './components/Contact'
+import Contact2 from './components/Contact2'
 
 function App() {
   
