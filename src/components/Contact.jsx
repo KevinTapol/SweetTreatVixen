@@ -130,7 +130,7 @@ const Contact = () => {
             value={formData.Email}
             className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
             type="email"
-            name="Phone"
+            name="Email"
             placeholder="Email"
             required
           />
@@ -144,8 +144,8 @@ const Contact = () => {
             }
             value={formData.Subject}
             className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
-            type="tel"
-            name="Phone"
+            type="text"
+            name="Subject"
             placeholder="Subject"
             required
           />
