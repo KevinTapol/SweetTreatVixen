@@ -60,7 +60,8 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="block max-w-[85%] bg-black mx-auto md:pl-20 p-4 py-16"
+      // removed md:pl-20 from className
+      className="block max-w-[85%] bg-black mx-auto  p-4 py-16"
     >
       <h1 className="py-4 text-4xl block mx-auto text-center font_pacifico w-[50%] text-pink-500 md:w-[30%]">
         Contact

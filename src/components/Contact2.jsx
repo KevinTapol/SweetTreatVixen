@@ -48,14 +48,14 @@ const Contact2 = () => {
   return (
     <div
       id="contact"
-      className="block max-w-[85%] bg-black mx-auto md:pl-20 p-4 py-16"
+      className="block max-w-[85%] bg-black mx-auto px-20 p-4 py-16"
     >
       <h1 className="py-4 text-4xl block mx-auto text-center font_pacifico w-[50%] text-pink-500 md:w-[30%]">
         Contact
       </h1>
       <form onSubmit={handleSubmit} method="POST" encType="multipart/form-data">
         <div>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 lg:gap-4">
           
 
             {/* Name Form Field */}

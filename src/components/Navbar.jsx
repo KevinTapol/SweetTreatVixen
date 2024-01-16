@@ -23,7 +23,7 @@ const Navbar = () => {
             {/* mobile navbar */}
             {nav ? <AiOutlineClose className='hidden text-pink-500' size={30} /> : <AiOutlineMenu size={30} className='md:hidden'/> }
             {/* screen size 786px and above navbar */}
-            {nav ? <AiOutlineClose className='hidden text-pink-500 m-4' size={30} /> : <h2 className='md:block hidden border-2 border-pink-500 p-2 rounded-lg bg-black/60 font_pacifico m-4'>Catering Menu</h2>}
+            {nav ? <AiOutlineClose className='hidden text-pink-500 m-4' size={30} /> : <h2 className='md:block hidden border-2 border-pink-500 p-2 text-sm rounded-lg bg-black/60 font_pacifico m-4'>Catering Menu</h2>}
         </div>
         {/* menu is off the page by 100% to the left and pulled on by 80% when hamburger clicked */}
         <div className={nav ? 'fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300]/80 ease-in-out duration-500 z-[999] md:w-[35%]' : 'fixed left-[-100%] z-[999]'} >
@@ -49,11 +49,11 @@ const Navbar = () => {
                 
             </div>
         </div>
-        <div onClick={() => {setNav(false);setCart(true)}} className='flex flex-end text-pink-500 top-2 right-4 z-[999] fixed hover:scale-[120%] ease-in duration-200 cursor-pointer '  >
+        <div onClick={() => {setNav(false);setCart(true)}} className='flex flex-end text-pink-500 top-2 right-2 z-[999] fixed hover:scale-[120%] ease-in duration-200 cursor-pointer '  >
             {/* mobile navbar */}
             {cart ? <AiOutlineClose className='hidden text-pink-500' size={30} /> : <BsCart3 size={30} className='md:hidden'/> }
             {/* screen size 786px and above navbar */}
-            {cart ? <AiOutlineClose className='hidden text-pink-500 m-4' size={30} /> : <h2 className='md:block hidden border-2 border-pink-500 p-2 rounded-lg bg-black/60 font_pacifico m-4'>Items Selected</h2>}
+            {cart ? <AiOutlineClose className='hidden text-pink-500 m-4' size={30} /> : <h2 className='md:block hidden border-2 border-pink-500 p-2 text-sm rounded-lg bg-black/60 font_pacifico m-4'>Items Selected</h2>}
         </div>
     </div>
   )
