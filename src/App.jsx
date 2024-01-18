@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Main />
       <Menu />
-      <Contact />
+      <Contact2 />
       <Footer />
     </div>
   )

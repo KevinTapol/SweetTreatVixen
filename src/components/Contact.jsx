@@ -90,6 +90,7 @@ const Contact = () => {
                 required
               />
             </div> */}
+            <label className="text-white hidden" htmlFor="nameInput">Name</label>
             <input
               onChange={(e) =>
                 setFormData({ ...formData, Name: e.target.value })

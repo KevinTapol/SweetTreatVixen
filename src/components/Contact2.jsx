@@ -48,7 +48,7 @@ const Contact2 = () => {
   return (
     <div
       id="contact"
-      className="block max-w-[85%] bg-black mx-auto px-20 p-4 py-16"
+      className="block max-w-[85%] bg-black mx-auto p-4 py-16"
     >
       <h1 className="py-4 text-4xl block mx-auto text-center font_pacifico w-[50%] text-pink-500 md:w-[30%]">
         Contact
@@ -82,35 +82,35 @@ const Contact2 = () => {
 
             {/* Phone Form Field */}
             <div className="flex flex-col py-2">
-            <label
-                for="phoneInput"
-                className="py-2 m-2 text-lg text-pink-500 font_pacifico"
-              >
-                Phone Number
-              </label>
-            <input
-              onChange={(e) =>
-                setFormData({ ...formData, Phone: e.target.value })
-              }
-              value={formData.Phone}
-              className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
-              id='phoneInput'
-              type="tel"
-              name="Phone"
-              placeholder="Phone Number"
-              required
-            />
+              <label
+                  for="phoneInput"
+                  className="py-2 m-2 text-lg text-pink-500 font_pacifico"
+                >
+                  Phone Number
+                </label>
+              <input
+                onChange={(e) =>
+                  setFormData({ ...formData, Phone: e.target.value })
+                }
+                value={formData.Phone}
+                className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
+                id='phoneInput'
+                type="tel"
+                name="Phone"
+                placeholder="Phone Number"
+                required
+              />
           </div>
 
             {/* Email Form Field */}
             <div className="flex flex-col py-2">
-                <label
+              <label
                 for="emailInput"
                 className="py-2 m-2 text-lg text-pink-500 font_pacifico"
               >
                 Email
               </label>
-              <input
+                <input
             onChange={(e) =>
               setFormData({ ...formData, Email: e.target.value })
             }
