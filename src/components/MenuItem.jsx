@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from './Modal'
 
 const MenuItem = ({id, imgUrl ,name ,emoji , ingredients, directions, instructions, small, medium, large}) => {
+  const props = {id, imgUrl ,name ,emoji , ingredients, directions, instructions, small, medium, large}
   const [openModal, setOpenModal] = useState(false)
   return (
 
