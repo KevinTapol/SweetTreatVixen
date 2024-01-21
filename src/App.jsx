@@ -6,6 +6,8 @@ import Menu from './components/Menu'
 import Contact from './components/Contact'
 import Contact2 from './components/Contact2'
 import NavbarNoCart from './components/NavbarNoCart'
+import Main2 from './components/Main2'
+import Contact3 from './components/Contact3'
 
 function App() {
   
@@ -13,9 +15,9 @@ function App() {
   return (
     <div className='bg-black'>
       <NavbarNoCart />
-      <Main />
+      <Main2 />
       <Menu />
-      <Contact2 />
+      <Contact3 />
       <Footer />
     </div>
   )

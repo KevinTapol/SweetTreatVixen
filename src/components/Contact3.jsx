@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // const base = new Airtable({ apiKey: `${import.meta.env.VITE_API}`}).base(`${import.meta.env.VITE_BASE}`);
 
-const Contact2 = () => {
+const Contact3 = () => {
   const [formData, setFormData] = useState({
     Name: "",
     Phone: "",
@@ -11,10 +11,10 @@ const Contact2 = () => {
     Message: "",
   });
 
-  const [formSuccess, setformSuccess] = useState(false);
+  const [formSuccess, setFormSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     const airData = {
@@ -30,19 +30,25 @@ const Contact2 = () => {
         },
       ],
     };
-    fetch(`${import.meta.env.VITE_AIRTABLE_API}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `${import.meta.env.VITE_BEARER}`,
-      },
-      body: JSON.stringify(airData),
-    })
-      .then(() => {
-        setIsLoading(false);
-        setformSuccess(!formSuccess);
+    try {
+      const res = await fetch(`${import.meta.env.VITE_AIRTABLE_API}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `${import.meta.env.VITE_BEARER}`,
+        },
+        body: JSON.stringify(airData),
       })
-      .catch((error) => console.log(error));
+      // then if success set loading useState to false and form success to true
+      if (res.ok) {
+        setIsLoading(false)
+        setFormSuccess(!formSuccess)
+      } else {
+        console.error(`Error: ${res.status} - ${res.statusText}`)
+      }
+    } catch (error) {
+      console.error(error)
+    }
   };
 
   return (
@@ -199,4 +205,4 @@ const Contact2 = () => {
   );
 };
 
-export default Contact2;
+export default Contact3;
