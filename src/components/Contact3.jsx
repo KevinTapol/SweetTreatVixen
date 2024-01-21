@@ -73,6 +73,7 @@ const Contact3 = () => {
                 Name
               </label>
               <input
+              // ... creates a shallow copy of the existing formData object and then updates the Name property with the new value from e.target.value
                 onChange={(e) =>
                   setFormData({ ...formData, Name: e.target.value })
                 }
