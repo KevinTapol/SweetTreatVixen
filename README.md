@@ -47,7 +47,8 @@ used
 
 `<form action={`${import.meta.env.VITE_FORM}`}>`
 
-<mark>Learn Airtable and Airtable JS Library automation emails based on table data per email recipient for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier</mark>
+-[x] Learn Airtable and Airtable JS Library automation emails based on table data per email recipient for an alternative to app.getform.io due to getform restrictions of 50 emails for free tier
+***You can add collaborators on mobile with an email confirmation***
 
 
 *Should I change navbar for big screens to include the menu or change the icon to something more descriptive?*
