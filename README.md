@@ -86,3 +86,5 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 -npm i --save-dev --save-exact prettier
 -npx prettier --write index.html
 replace index.html with whatever file you wish to format by default
+
+- consider using window.localStorage() with useEffect() to maintain useState() on refresh
