@@ -88,3 +88,4 @@ I used an arrow function with `{() => {fn1;fn2}}` to call 2 functions in line sp
 replace index.html with whatever file you wish to format by default
 
 - consider using window.localStorage() with useEffect() to maintain useState() on refresh
+[The NetNinja localStorage.setItem('key','value') localStorage.getItem() JSON.stringify(object) JSON.parse() localStorage.getItem()](https://www.youtube.com/watch?v=SOnMln3W0U8&ab_channel=NetNinja)
