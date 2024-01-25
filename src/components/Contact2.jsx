@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // const base = new Airtable({ apiKey: `${import.meta.env.VITE_API}`}).base(`${import.meta.env.VITE_BASE}`);
 
@@ -10,7 +10,11 @@ const Contact2 = () => {
     Subject: "",
     Message: "",
   });
+// create a useEffect upon localStorage set item with JSON.stringify(formData)
+// const result = localStorage.getItem() use JSON.parse(result)
+  useEffect(() => {
 
+  }, [])
   const [formSuccess, setformSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
