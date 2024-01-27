@@ -89,3 +89,5 @@ replace index.html with whatever file you wish to format by default
 
 - consider using window.localStorage() with useEffect() to maintain useState() on refresh
 [The NetNinja localStorage.setItem('key','value') localStorage.getItem() JSON.stringify(object) JSON.parse() localStorage.getItem()](https://www.youtube.com/watch?v=SOnMln3W0U8&ab_channel=NetNinja)
+
+***Idea create an item cart menu with checkboxes to save the state object to local storage on submit. Then get the item on page refresh with useEffect() with the condition of the state object***
