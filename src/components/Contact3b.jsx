@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-// const base = new Airtable({ apiKey: `${import.meta.env.VITE_API}`}).base(`${import.meta.env.VITE_BASE}`);
-
 const Contact3b = () => {
-  const [formData, setFormData] = useState({
-    Name: "",
-    Phone: "",
-    Email: "",
-    Subject: "",
-    Message: "",
-  },{}, ()=> {
-    const localData = localStorage.getItem('formData')
-    return localData ? JSON.parse(localData) : {}
-  } );
+  const [formData, setFormData] = useState(() => {
+    const localValue = localStorage.getItem('ITEMS');
+    return localValue ? JSON.parse(localValue) : {
+      Name: "",
+      Phone: "",
+      Email: "",
+      Subject: "",
+      Message: "",
+    };
+  });
 
   useEffect(() => {
-    localStorage.setItem('formData', JSON.stringify(formData))
+    localStorage.setItem('ITEMS', JSON.stringify(formData))
   }, [formData])
 
   const [formSuccess, setFormSuccess] = useState(false);
@@ -58,6 +56,14 @@ const Contact3b = () => {
     }
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
   return (
     <div
       id="contact"
@@ -68,22 +74,17 @@ const Contact3b = () => {
       </h1>
       <form onSubmit={handleSubmit} method="POST" encType="multipart/form-data">
         <div>
-        <div className="grid lg:grid-cols-3 lg:gap-4">
-          
-
+          <div className="grid lg:grid-cols-3 lg:gap-4">
             {/* Name Form Field */}
             <div className="flex flex-col py-2">
               <label
-                for="nameInput"
+                htmlFor="nameInput"
                 className="py-2 m-2 text-lg text-pink-500 font_pacifico"
               >
                 Name
               </label>
               <input
-              // ... creates a shallow copy of the existing formData object and then updates the Name property with the new value from e.target.value
-                onChange={(e) =>
-                  setFormData({ ...formData, Name: e.target.value })
-                }
+                onChange={handleChange}
                 value={formData.Name}
                 className="border-2 rounded-lg p-3  border-gray-300 bg-black text-white"
                 id="nameInput"
@@ -97,15 +98,13 @@ const Contact3b = () => {
             {/* Phone Form Field */}
             <div className="flex flex-col py-2">
               <label
-                  for="phoneInput"
-                  className="py-2 m-2 text-lg text-pink-500 font_pacifico"
-                >
-                  Phone Number
-                </label>
+                htmlFor="phoneInput"
+                className="py-2 m-2 text-lg text-pink-500 font_pacifico"
+              >
+                Phone Number
+              </label>
               <input
-                onChange={(e) =>
-                  setFormData({ ...formData, Phone: e.target.value })
-                }
+                onChange={handleChange}
                 value={formData.Phone}
                 className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
                 id='phoneInput'
@@ -114,75 +113,70 @@ const Contact3b = () => {
                 placeholder="Phone Number"
                 required
               />
-          </div>
+            </div>
 
             {/* Email Form Field */}
             <div className="flex flex-col py-2">
               <label
-                for="emailInput"
+                htmlFor="emailInput"
                 className="py-2 m-2 text-lg text-pink-500 font_pacifico"
               >
                 Email
               </label>
-                <input
-            onChange={(e) =>
-              setFormData({ ...formData, Email: e.target.value })
-            }
-            value={formData.Email}
-            className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
-            id="emailInput"
-            type="email"
-            name="Email"
-            placeholder="Email"
-            required
-          />
+              <input
+                onChange={handleChange}
+                value={formData.Email}
+                className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
+                id="emailInput"
+                type="email"
+                name="Email"
+                placeholder="Email"
+                required
+              />
             </div>
-        </div>
-            {/* Subject Form Field */}
-            <div className="flex flex-col py-2">
-                <label
-                    for="subjectInput"
-                    className="py-2 m-2 text-lg text-pink-500 font_pacifico"
-                >
-                    Subject
-                </label>
-                <input
-                    onChange={(e) =>
-                      setFormData({ ...formData, Subject: e.target.value })
-                    }
-                    value={formData.Subject}
-                    className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
-                    id="subjectInput"
-                    type="text"
-                    name="Subject"
-                    placeholder="Subject"
-                    required
-                />
-            </div>
-            {/* Message Form Field */}
-            <div className="flex flex-col py-2">
-              <label
-                for="messageInput"
-                className="py-2 m-2 text-lg text-pink-500 font_pacifico"
-              >
-                Message
-              </label>
-              <textarea
-                onChange={(e) =>
-                  setFormData({ ...formData, Message: e.target.value })
-                }
-            value={formData.Message}
-            className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
-            id="messageInput"
-            name="Message"
-            cols="30"
-            rows="10"
-            placeholder="Message"
-            required
-          ></textarea>
-        </div>
+          </div>
 
-      </div>
+          {/* Subject Form Field */}
+          <div className="flex flex-col py-2">
+            <label
+              htmlFor="subjectInput"
+              className="py-2 m-2 text-lg text-pink-500 font_pacifico"
+            >
+              Subject
+            </label>
+            <input
+              onChange={handleChange}
+              value={formData.Subject}
+              className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
+              id="subjectInput"
+              type="text"
+              name="Subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+
+          {/* Message Form Field */}
+          <div className="flex flex-col py-2">
+            <label
+              htmlFor="messageInput"
+              className="py-2 m-2 text-lg text-pink-500 font_pacifico"
+            >
+              Message
+            </label>
+            <textarea
+              onChange={handleChange}
+              value={formData.Message}
+              className="border-2 rounded-lg p-3 flex border-gray-300 bg-black text-white"
+              id="messageInput"
+              name="Message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+        </div>
 
         {!isLoading && (
           <button
