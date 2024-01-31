@@ -4,10 +4,17 @@ import dataArray from '../data/items.json'
 import { BsCart3 } from "react-icons/bs";
 
 const NavbarItems = () => {
+
+    // the goal of this block is to set up a stateful value for an order with useEffect to update to localStorage when the state changes
     const [shoppingCart, setShoppingCart] = useState(() => {
         const localValue = localStorage.getItem('CART');
         return localValue ? JSON.parse(localValue) : {
-          
+            DonutsNum: "",
+            CakesNum: "",
+            CupcakesNum: "",
+            CookiesNum: "",
+            PieNum: "",
+            BrownieNum: "",
         };
       });
     
