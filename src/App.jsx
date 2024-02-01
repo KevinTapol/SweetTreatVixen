@@ -10,6 +10,7 @@ import Main2 from './components/Main2'
 import Contact3 from './components/Contact3'
 import Contact3b from './components/Contact3b'
 import NavbarNew from './components/NavbarNew'
+import NavbarItems from './components/NavbarItems'
 
 function App() {
   

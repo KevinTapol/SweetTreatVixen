@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import dataArray from '../data/items.json'
 import { BsCart3 } from "react-icons/bs";
+import cake from '/imgs/chocolate_cake.jpg'
 
 const NavbarItems = () => {
 
@@ -63,8 +64,11 @@ const NavbarItems = () => {
             <div className='flex justify-end'>
                 <AiOutlineClose onClick={handleCart} size={30} className='text-pink-500 border-2 border-pink-500 rounded-lg m-4 hover:scale-[120%] ease-in duration-200'/>
             </div>
+
+            {/* creating a static display of a soon to be dynamically generated object component shopping list */}
                 <h2 className='w-full text-3xl font-bold text-pink-500 font_pacifico text-center my-4'>Items in Cart</h2>
-                
+                <img className='max-w-[200px] block mx-auto' src={cake} alt="" />
+                <input type="checkbox" />
             </div>
         </div>
         <div onClick={() => {setNav(false);setCart(true)}} className='flex flex-end text-pink-500 top-2 right-2 z-[999] fixed hover:scale-[120%] ease-in duration-200 cursor-pointer '  >
