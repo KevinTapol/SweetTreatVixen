@@ -65,7 +65,7 @@ const NavbarItems = () => {
                 <AiOutlineClose onClick={handleCart} size={30} className='text-pink-500 border-2 border-pink-500 rounded-lg m-4 hover:scale-[120%] ease-in duration-200'/>
             </div>
 
-            {/* creating a static display of a soon to be dynamically generated object component shopping list */}
+            {/* creating a static display of a soon to be dynamically generated object component shopping list Considering creating dynamic array pull from the data.json file by size per checkbox */}
                 <h2 className='w-full text-3xl font-bold text-pink-500 font_pacifico text-center my-4'>Items in Cart</h2>
                 <img className='max-w-[200px] block mx-auto' src={cake} alt="" />
                 <input type="checkbox" />
