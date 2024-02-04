@@ -3,6 +3,8 @@ import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import dataArray from '../data/items.json'
 import { BsCart3 } from "react-icons/bs";
 import cake from '/imgs/chocolate_cake.jpg'
+import ItemCartModal from './ItemCartModal';
+import dataArray from '../data/items.json'
 
 const NavbarItems = () => {
 
@@ -67,7 +69,10 @@ const NavbarItems = () => {
 
             {/* creating a static display of a soon to be dynamically generated object component shopping list Considering creating dynamic array pull from the data.json file by size per checkbox */}
                 <h2 className='w-full text-3xl font-bold text-pink-500 font_pacifico text-center my-4'>Items in Cart</h2>
-                <img className='max-w-[200px] block mx-auto' src={cake} alt="" />
+                {dataArray.map((item, index) => (
+                    <img className='max-w-[200px] block mx-auto' src={cake} alt="" />
+                ))}
+                {/* <img className='max-w-[200px] block mx-auto' src={cake} alt="" /> */}
                 <input type="checkbox" />
             </div>
         </div>
