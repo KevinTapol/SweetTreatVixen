@@ -3,7 +3,7 @@ import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import dataArray from '../data/items.json'
 import { BsCart3 } from "react-icons/bs";
 import cake from '/imgs/chocolate_cake.jpg'
-import ItemCartModal from './ItemCartModal';
+import ItemCartItem from './ItemCartItem';
 // import dataArray from '../data/items.json'
 
 const NavbarItems = () => {
@@ -69,11 +69,14 @@ const NavbarItems = () => {
 
             {/* creating a static display of a soon to be dynamically generated object component shopping list Considering creating dynamic array pull from the data.json file by size per checkbox */}
                 <h2 className='w-full text-3xl font-bold text-pink-500 font_pacifico text-center my-4'>Items in Cart</h2>
-                {dataArray.map((item, index) => (
+                {/* {dataArray.map((item, index) => (
                     <img className='max-w-[200px] block mx-auto' src={cake} alt="" />
-                ))}
-                {/* <img className='max-w-[200px] block mx-auto' src={cake} alt="" /> */}
-                <input type="checkbox" />
+                ))} */}
+                <div className='flex justify-around items-center'>
+                    <img className='max-w-[100px]' src={cake} alt="" />
+                    <h3 className='text-pink-500 font_pacifico bg-white/30 p-2 rounded-xl'>Chocolate Cake</h3>
+                    <input className='cursor-pointer scale-[2]' type="checkbox" />
+                </div>
             </div>
         </div>
         <div onClick={() => {setNav(false);setCart(true)}} className='flex flex-end text-pink-500 top-2 right-2 z-[999] fixed hover:scale-[120%] ease-in duration-200 cursor-pointer '  >

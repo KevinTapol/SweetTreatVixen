@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ItemCartModal = (props) => {
+const ItemCartItem = (props) => {
     const {id, name, imgUrl, small, medium, large} = props
   return (
     <div id={props.id} className='flex'>
@@ -10,4 +10,4 @@ const ItemCartModal = (props) => {
   )
 }
 
-export default ItemCartModal
+export default ItemCartItem

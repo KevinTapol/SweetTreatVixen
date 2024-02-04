@@ -17,10 +17,10 @@ function App() {
 
   return (
     <div className='bg-black'>
-      <NavbarNoCart />
+      <NavbarItems />
       <Main2 />
       <Menu />
-      <Contact3 />
+      <Contact3b />
       <Footer />
     </div>
   )
