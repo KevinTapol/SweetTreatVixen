@@ -4,7 +4,7 @@ import dataArray from '../data/items.json'
 import { BsCart3 } from "react-icons/bs";
 import cake from '/imgs/chocolate_cake.jpg'
 import ItemCartModal from './ItemCartModal';
-import dataArray from '../data/items.json'
+// import dataArray from '../data/items.json'
 
 const NavbarItems = () => {
 
