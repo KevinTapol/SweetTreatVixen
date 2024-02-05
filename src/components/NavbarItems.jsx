@@ -76,6 +76,8 @@ const NavbarItems = () => {
                     <img className='max-w-[100px]' src={cake} alt="" />
                     <h3 className='text-pink-500 font_pacifico bg-white/30 p-2 rounded-xl'>Chocolate Cake</h3>
                     <input className='cursor-pointer scale-[2]' type="checkbox" />
+                    {/* creating an input for quantity sold */}
+                    {/* <input type="number" min={0}/> */}
                 </div>
             </div>
         </div>
