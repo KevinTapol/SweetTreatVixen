@@ -77,7 +77,17 @@ const NavbarItems = () => {
                     <h3 className='text-pink-500 font_pacifico bg-white/30 p-2 rounded-xl'>Chocolate Cake</h3>
                     <input className='cursor-pointer scale-[2]' type="checkbox" />
                     {/* creating an input for quantity sold */}
-                    {/* <input type="number" min="0"/> */}
+                    
+                    {/* e.target.value */}
+                    {/* <form action="">
+                        <label htmlFor="quant">Quant</label>
+                        <input
+                          onChange={e.target.value}
+                          id='quant'
+                          min={0}
+                          type="number"                    
+                        />
+                    </form> */}
                 </div>
             </div>
         </div>
