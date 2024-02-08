@@ -79,12 +79,13 @@ const NavbarItems = () => {
                     {/* creating an input for quantity sold */}
                     
                     {/* e.target.value */}
-                    {/* <form action="">
+                    {/* <form action="" className='flex flex-col'>
                         <label htmlFor="quant">Quant</label>
                         <input
-                          onChange={e.target.value}
+                          className='text-black'
+                          onChange={(e) => e.target.value}
                           id='quant'
-                          min={0}
+                          min="0"
                           type="number"                    
                         />
                     </form> */}
