@@ -82,7 +82,7 @@ const NavbarItems = () => {
                     {/* <form action="" className='flex flex-col'>
                         <label htmlFor="quant">Quant</label>
                         <input
-                          className='text-black'
+                          className='text-black m-1'
                           onChange={(e) => e.target.value}
                           id='quant'
                           min="0"
