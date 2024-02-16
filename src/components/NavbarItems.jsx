@@ -3,6 +3,7 @@ import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import dataArray from '../data/items.json'
 import { BsCart3 } from "react-icons/bs";
 import cake from '/imgs/chocolate_cake.jpg'
+import bcake from '/imgs/BirthdayCake.jpg'
 import ItemCartItem from './ItemCartItem';
 // import dataArray from '../data/items.json'
 
@@ -73,8 +74,8 @@ const NavbarItems = () => {
                     <img className='max-w-[200px] block mx-auto' src={cake} alt="" />
                 ))} */}
                 <div className='flex justify-around items-center'>
-                    <img className='max-w-[100px]' src={cake} alt="" />
-                    <h3 className='text-pink-500 font_pacifico bg-white/30 p-2 rounded-xl'>Chocolate Cake</h3>
+                    <img className='max-w-[100px]' src={bcake} alt="" />
+                    <h3 className='text-pink-500 font_pacifico bg-white/30 p-2 rounded-xl'>Birthday Cake</h3>
                     <input className='cursor-pointer scale-[2]' type="checkbox" />
                     {/* creating an input for quantity sold */}
                     
