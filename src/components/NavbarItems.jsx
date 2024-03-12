@@ -57,7 +57,7 @@ const NavbarItems = () => {
             <div className='flex flex-col'>
                 <div className='block m-auto'>
                 {dataArray.map((item, index) => (
-                    <a onClick={handleNav} className='text-pink-500 font_pacifico flex justify-start my-1 hover:scale-[120%] ease-in duration-200' key={index} href={`#${item.id}`}>{item.name}</a>
+                    <a onClick={handleNav} className='text-pink-500 font_pacifico flex justify-start my-1 hover:scale-[120%] ease-in duration-200' id={`${item.id}ID`} key={index} href={`#${item.id}`}>{item.name}</a>
                 ))}
                 </div>
                 <a onClick={handleNav} href="#home" className='text-pink-500 font_pacifico mx-auto mt-4 hover:scale-[120%] ease-in duration-200'>Home</a>
