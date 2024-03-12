@@ -41,7 +41,7 @@ const NavbarItems = () => {
     <div id='navbar' className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white absolute'>
     {/* make this mobile nav hidden at screen sizes medium and above then create a new nav for medium and above named Catering Menu instead of icon. Maybe just changed the icon to be an h2 Catering Icon and get rid of the icon entirely? */}
         {/* hamburger menu useState logic for open close to display hamburger or X */}
-        <div onClick={() => {setNav(true); setCart(false)}} className='flex flex-end text-pink-500 top-2 left-2 z-[999] fixed hover:scale-[120%] ease-in duration-200 cursor-pointer'  >
+        <div id='experiment' onClick={() => {setNav(true); setCart(false)}} className='flex flex-end text-pink-500 top-2 left-2 z-[999] fixed hover:scale-[120%] ease-in duration-200 cursor-pointer'  >
             {/* mobile navbar */}
             {nav ? <AiOutlineClose className='hidden text-pink-500' size={30} /> : <AiOutlineMenu size={30} className='md:hidden'/> }
             {/* screen size 786px and above navbar */}
