@@ -45,7 +45,7 @@ const NavbarItems = () => {
             {/* mobile navbar */}
             {nav ? <AiOutlineClose className='hidden text-pink-500' size={30} /> : <AiOutlineMenu size={30} className='md:hidden'/> }
             {/* screen size 786px and above navbar */}
-            {nav ? <AiOutlineClose className='hidden text-pink-500 m-4' size={30} /> : <h2 className='md:block hidden border-2 border-pink-500 p-2 text-sm rounded-lg bg-black/60 font_pacifico m-4'>Catering Menu</h2>}
+            {nav ? <AiOutlineClose id='closeCater' className='hidden text-pink-500 m-4' size={30} /> : <h2 id='cater' className='md:block hidden border-2 border-pink-500 p-2 text-sm rounded-lg bg-black/60 font_pacifico m-4'>Catering Menu</h2>}
         </div>
         {/* menu is off the page by 100% to the left and pulled on by 80% when hamburger clicked */}
         <div className={nav ? 'fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300]/80 ease-in-out duration-500 z-[999] md:w-[35%]' : 'fixed left-[-100%] z-[999]'} >
@@ -74,6 +74,7 @@ const NavbarItems = () => {
                     <img className='max-w-[200px] block mx-auto' src={cake} alt="" />
                 ))} */}
                 <div className='flex justify-around items-center'>
+                    {/* static placeholder for a future dynamic layout mapped layout */}
                     <img className='max-w-[100px]' src={bcake} alt="" />
                     <h3 className='text-pink-500 font_pacifico bg-white/30 p-2 rounded-xl'>Birthday Cake</h3>
                     <input className='cursor-pointer scale-[2]' type="checkbox" />
