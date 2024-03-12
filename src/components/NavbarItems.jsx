@@ -61,7 +61,7 @@ const NavbarItems = () => {
                 ))}
                 </div>
                 <a onClick={handleNav} href="#home" className='text-pink-500 font_pacifico mx-auto mt-4 hover:scale-[120%] ease-in duration-200'>Home</a>
-                <a onClick={handleNav} href="#contact" className='text-pink-500 font_pacifico mx-auto my-2 hover:scale-[120%] ease-in duration-200'>Contact</a>
+                <a id='contactForm' onClick={handleNav} href="#contact" className='text-pink-500 font_pacifico mx-auto my-2 hover:scale-[120%] ease-in duration-200'>Contact</a>
             </div>
             <div className={cart ? 'fixed right-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300]/80 ease-in-out duration-500 z-[999] md:w-[35%]' : 'fixed right-[-100%] z-[999]'}>
             <div className='flex justify-end'>
