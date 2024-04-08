@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const Contact3b = () => {
+  // Here I am using a single useState() object instead of several useState strings.
   const [formData, setFormData] = useState(() => {
+    // The code below is to get the local value of the json object from the input fields.
     const localValue = localStorage.getItem('ITEMS');
+    // If there is a local value then parse the string into JSON else return empty strings for the values of the keys.
     return localValue ? JSON.parse(localValue) : {
       Name: "",
       Phone: "",
@@ -12,6 +15,7 @@ const Contact3b = () => {
     };
   });
 
+  // This useEffect() performs the side effect of setting the form data as a string in local storage as 'ITEMS'
   useEffect(() => {
     localStorage.setItem('ITEMS', JSON.stringify(formData))
   }, [formData])
@@ -19,6 +23,7 @@ const Contact3b = () => {
   const [formSuccess, setFormSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  // The form submission function is preventing the default page refresh and grabbing the inputs into a JSON that is recognizable by Airtable.
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -35,6 +40,7 @@ const Contact3b = () => {
         },
       ],
     };
+    // Try to fetch the Airtable Api with headres and post the string of the JSON data.
     try {
       const res = await fetch(`${import.meta.env.VITE_AIRTABLE_API}`, {
         method: "POST",
@@ -44,10 +50,11 @@ const Contact3b = () => {
         },
         body: JSON.stringify(airData),
       })
-      // then if success set loading useState to false and form success to true
+      //If the post is successful, then set loading useState to false and form success to true.
       if (res.ok) {
         setIsLoading(false)
         setFormSuccess(!formSuccess)
+        // If the response is not ok, log to the console the error status code and specific text with string interpolation.
       } else {
         console.error(`Error: ${res.status} - ${res.statusText}`)
       }
@@ -56,6 +63,7 @@ const Contact3b = () => {
     }
   };
 
+  // This is the onChange function being called for each input field where the name and value is being destructured from the user input and setting the useState() object's key value pairs to the new user's name and value input fields.
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
