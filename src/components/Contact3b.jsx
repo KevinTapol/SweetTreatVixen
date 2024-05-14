@@ -27,6 +27,7 @@ const Contact3b = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
+    // The airData object is formatted for Airtable JSON format in that the data object key must be named records with an array value of the object fields being the column names as keys and user input as values.
     const airData = {
       records: [
         {
